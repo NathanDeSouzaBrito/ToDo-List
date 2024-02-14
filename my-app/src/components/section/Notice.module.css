@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+
+:root {
+  --fontRaleway: Raleway;
+  --fontPoppins: Poppins;
+  --white: #ffffff;
+  --black: #2d2d2d;
+  --blue: #0c70f2;
+}
+
+.noticeGeneral {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.notice {
+  border-radius: 15px;
+  width: 700px;
+  height: 380px;
+
+  text-align: center;
+  display: grid;
+  background-color: var(--white);
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question {
+  color: black;
+
+  font-weight: 600;
+  font-family: var(--fontRaleway);
+  font-size: 30px;
+  cursor: context-menu;
+
+  margin-top: 4%;
+}
+
+.description {
+  font-family: var(--fontRaleway);
+  font-weight: 400;
+  font-size: 25px;
+
+  color: black;
+
+  cursor: context-menu;
+}
+
+.divBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+}
+
+.btnN {
+  width: 250px;
+  height: 70px;
+
+  background-color: var(--blue);
+  border: 0;
+  border-radius: 15px;
+
+  color: var(--white);
+
+  font-family: var(--fontRaleway);
+  font-weight: 500;
+  font-size: 25px;
+  margin-right: 3%;
+  cursor: pointer;
+}
+
+.btnS {
+  width: 250px;
+  height: 70px;
+
+  background-color: var(--white);
+  border: 2px var(--black) solid;
+  border-radius: 15px;
+
+  color: var(--black);
+
+  font-family: var(--fontRaleway);
+  font-weight: 500;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.btnN:hover {
+  background-color: var(--white);
+  color: var(--blue);
+  transition-duration: 0.5s;
+  border: 2px var(--blue) solid;
+}
+
+.btnS:hover {
+  background-color: var(--black);
+  color: var(--white);
+  transition-duration: 0.5s;
+}
+
+/* ==== STYLE FOR PHONE */
+@media (max-width: 501px) {
+  .notice {
+    border-radius: 15px;
+    width: 290px;
+    height: 300px;
+
+    text-align: center;
+    display: grid;
+    background-color: var(--white);
+  }
+
+  .question {
+    font-weight: 500;
+    font-family: var(--fontRaleway);
+    font-size: 23px;
+    cursor: context-menu;
+  }
+
+  .description {
+    font-family: var(--fontRaleway);
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .btnN {
+    width: 120px;
+    height: 50px;
+
+    background-color: var(--blue);
+    border: 0;
+    border-radius: 15px;
+
+    color: var(--white);
+
+    font-family: var(--fontRaleway);
+    font-weight: 500;
+    font-size: 25px;
+    margin-right: 3%;
+    cursor: pointer;
+  }
+
+  .btnS {
+    width: 120px;
+    height: 50px;
+
+    background-color: var(--white);
+    border: 2px var(--black) solid;
+    border-radius: 15px;
+
+    color: var(--black);
+
+    font-family: var(--fontRaleway);
+    font-weight: 500;
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
+
+/* ==== STYLE FOR SMALL TABLET */
+@media (min-width: 502px) and (max-width: 751px) {
+  .notice {
+    border-radius: 15px;
+    width: 350px;
+    height: 300px;
+  }
+
+  .question {
+    font-weight: 500;
+    font-size: 25px;
+  }
+
+  .description {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .btnN {
+    width: 120px;
+    height: 50px;
+
+    border: 0;
+    border-radius: 15px;
+
+    font-weight: 500;
+    font-size: 25px;
+    margin-right: 3%;
+    cursor: pointer;
+  }
+
+  .btnS {
+    width: 120px;
+    height: 50px;
+
+    border: 2px var(--black) solid;
+    border-radius: 15px;
+
+    font-weight: 500;
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
+
+/* ==== STYLE FOR TABLET */
+@media (min-width: 752px) {
+}

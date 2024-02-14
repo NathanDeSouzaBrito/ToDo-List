@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+
+:root {
+  --fontRaleway: Raleway;
+  --fontPoppins: Poppins;
+  --white: #ffffff;
+  --black: #2d2d2d;
+}
+
+.main {
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  color: var(--white);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-family: var(--fontPoppins);
+  font-weight: 500;
+  font-size: 20px;
+  cursor: context-menu;
+}
+
+.article {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.ol {
+  margin: 0 15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+
+  font-weight: 600;
+  font-family: var(--fontRaleway);
+  font-size: 30px;
+  list-style-type: none;
+  cursor: context-menu;
+}
+
+.dividerBar {
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
+  width: 700px;
+  height: 6px;
+}
+
+.lineOfTasks {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  width: 700px;
+  height: 35px;
+  margin-top: 2%;
+  margin-bottom: 20px;
+}
+
+.lineOfAddTasks {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  height: 25px;
+}
+
+.p {
+  font-family: var(--fontRaleway);
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 15px;
+  cursor: context-menu;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box {
+  cursor: pointer;
+  color: var(--black);
+  border: 0;
+}
+
+.svg {
+  display: flex;
+  justify-content: flex-end;
+  height: 35px;
+  width: 220px;
+}
+
+#svg {
+  cursor: pointer;
+  margin-left: 8px;
+  border-radius: 5px;
+}
+
+#svg:hover {
+  border: 3px var(--white) solid;
+  transition-duration: 0.5s;
+  animation: border 3s infinite;
+}
+
+@keyframes border {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--white);
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+#more {
+  cursor: pointer;
+  margin-right: 19px;
+}
+
+.btn {
+  background: transparent;
+  border: 0;
+}
+
+#editing {
+  color: var(--white);
+  background-color: var(--black);
+  border: 2px var(--white) solid;
+  font-family: var(--fontRaleway);
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+/* ==== STYLE FOR PHONE */
+@media (max-width: 501px) {
+  .main {
+    width: 350px;
+    background-color: var(--black);
+
+    display: flex;
+    justify-content: center;
+
+    display: grid;
+    grid-template-rows: 50% 50%;
+    color: var(--white);
+
+    margin-left: 5%;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 300px;
+    height: 200px;
+
+    font-family: var(--fontPoppins);
+    font-weight: 300;
+    font-size: 9px;
+    cursor: context-menu;
+  }
+
+  .article {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+
+  .ol {
+    margin: 0 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 500;
+    font-family: var(--fontRaleway);
+    font-size: 20px;
+    list-style-type: none;
+    cursor: context-menu;
+  }
+
+  .dividerBar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--white);
+    width: 300px;
+    height: 5px;
+  }
+
+  .lineOfTasks {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 300px;
+    height: 35px;
+    margin-top: 2%;
+    margin-bottom: 20px;
+  }
+
+  .lineOfAddTasks {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 25px;
+  }
+
+  .p {
+    font-family: var(--fontRaleway);
+    font-weight: 300;
+    font-size: 15px;
+    margin-left: 15px;
+    cursor: context-menu;
+    display: flex;
+    align-items: center;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #box {
+    cursor: pointer;
+    color: var(--black);
+    border: 0;
+  }
+
+  .svg {
+    display: flex;
+    justify-content: flex-end;
+    height: 35px;
+    width: 120px;
+  }
+
+  #svg {
+    cursor: pointer;
+    margin-left: 8px;
+    border-radius: 5px;
+
+    width: 25px;
+    height: 25px;
+  }
+
+  #more {
+    cursor: pointer;
+    margin-right: 19px;
+
+    width: 20px;
+    height: 20px;
+  }
+
+  .btn {
+    background: transparent;
+    border: 0;
+  }
+
+  #editing {
+    color: var(--white);
+    background-color: var(--black);
+    border: 2px var(--white) solid;
+    font-family: var(--fontRaleway);
+    font-weight: 300;
+    font-size: 15px;
+    margin-left: 15px;
+  }
+}
+
+/* ==== STYLE FOR SMALL TABLET */
+@media (min-width: 502px) and (max-width: 751px) {
+  .main {
+    width: 500px;
+    background-color: var(--black);
+
+    display: flex;
+    justify-content: center;
+
+    display: grid;
+    grid-template-rows: 50% 50%;
+    color: var(--white);
+
+    margin-left: 5%;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 500px;
+    height: 200px;
+
+    font-family: var(--fontPoppins);
+    font-weight: 500;
+    font-size: 15px;
+    cursor: context-menu;
+  }
+
+  .article {
+    height: 200px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+
+  .ol {
+    margin: 0 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 500;
+    font-family: var(--fontRaleway);
+    font-size: 25px;
+    list-style-type: none;
+    cursor: context-menu;
+  }
+
+  .dividerBar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--white);
+    width: 500px;
+    height: 5px;
+  }
+
+  .lineOfTasks {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 500px;
+    height: 35px;
+    margin-top: 2%;
+    margin-bottom: 20px;
+  }
+
+  .lineOfAddTasks {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 25px;
+  }
+
+  .p {
+    font-family: var(--fontRaleway);
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: context-menu;
+    display: flex;
+    align-items: center;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #box {
+    cursor: pointer;
+    color: var(--black);
+    border: 0;
+  }
+
+  .svg {
+    display: flex;
+    justify-content: flex-end;
+    height: 35px;
+    width: 153px;
+  }
+
+  #svg {
+    cursor: pointer;
+    margin-left: 8px;
+    border-radius: 5px;
+
+    width: 30px;
+    height: 30px;
+  }
+
+  #more {
+    cursor: pointer;
+    margin-right: 19px;
+
+    width: 20px;
+    height: 20px;
+  }
+
+  .btn {
+    background: transparent;
+    border: 0;
+  }
+
+  #editing {
+    color: var(--white);
+    background-color: var(--black);
+    border: 2px var(--white) solid;
+    font-family: var(--fontRaleway);
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 15px;
+  }
+}
+
+/* ==== STYLE FOR TABLET */
+@media (min-width: 752px) {
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .p {
+    font-size: 23px;
+  }
+}
